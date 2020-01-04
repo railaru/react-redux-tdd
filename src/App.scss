@@ -1,0 +1,14 @@
+.container {
+  margin: 0 auto;
+  padding: 0 25px;
+  max-width: 750px;
+}
+
+.header {
+  border-bottom: 1px solid white;
+  &__brand {
+    margin-left: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+}
