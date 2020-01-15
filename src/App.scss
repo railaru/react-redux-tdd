@@ -12,3 +12,16 @@
     letter-spacing: 2px;
   }
 }
+
+li {
+  list-style: none;
+}
+
+.button {
+  background: rgb(48, 48, 236);
+  border: 0;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}

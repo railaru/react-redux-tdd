@@ -17,7 +17,11 @@ export default class SharedButton extends Component {
     const { buttonText } = this.props;
 
     return (
-      <button data-test="shared-button" onClick={() => this.submitEvent()}>
+      <button
+        className="button"
+        data-test="shared-button"
+        onClick={() => this.submitEvent()}
+      >
         {buttonText}
       </button>
     );
