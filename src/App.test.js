@@ -39,7 +39,19 @@ describe('App component', () => {
 
   it('should render without errors', () => {
     const component = findByTestAttr(wrapper, 'app-component');
-
     expect(component.length).toBe(1);
+  });
+
+  it('exampleMethod_updatesState method should update state', () => {
+    const classInstance = wrapper.instance();
+    classInstance.exampleMethod_updatesState();
+    const newState = classInstance.state.hideBtn;
+    expect(newState).toBe(true);
+  });
+
+  it('exampleMethod_returnsValue method should increment number', () => {
+    const classInstance = wrapper.instance();
+    const newValue = classInstance.exampleMethod_returnsValue(1);
+    expect(newValue).toBe(2);
   });
 });
